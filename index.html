@@ -42,7 +42,10 @@ main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidde
 .achievement{display:flex;align-items:center;justify-content:center;gap:32px;margin-top:58px}
 .year{font-family:"Poppins",Arial,sans-serif;font-size:clamp(58px,7vw,100px);line-height:.85;font-weight:900;letter-spacing:-.055em;color:#ffe500}
 .divider{display:none}
-.award{font-family:"Poppins",Arial,sans-serif;text-align:left;font-size:clamp(42px,5vw,74px);font-weight:900;line-height:.95;letter-spacing:-.045em;text-transform:uppercase;color:#ffe500;max-width:none}
+.award{font-family:"Poppins",Arial,sans-serif;text-align:left;font-size:clamp(42px,5vw,74px);font-weight:900;line-height:.95;letter-spacing:-.045em;text-transform:uppercase;color:#ffe500;max-width:none;position:relative;cursor:default}
+.bee{position:absolute;left:68%;top:45%;font-size:24px;opacity:0;pointer-events:none;z-index:8;filter:none}
+.award:hover .bee{animation:beeFly 2.6s cubic-bezier(.2,.7,.25,1) forwards}
+@keyframes beeFly{0%{opacity:0;transform:translate(0,0) rotate(-8deg) scale(.65)}8%{opacity:1}22%{transform:translate(35px,-30px) rotate(15deg) scale(1)}40%{transform:translate(90px,12px) rotate(-12deg) scale(.95)}58%{transform:translate(155px,-55px) rotate(18deg) scale(1.05)}76%{opacity:1;transform:translate(250px,-18px) rotate(-5deg) scale(.9)}100%{opacity:0;transform:translate(55vw,-38vh) rotate(20deg) scale(.7)}}
 .blueprint-left{position:absolute;left:-130px;top:7%;width:410px;height:410px;border:1px solid var(--line);transform:rotate(38deg);opacity:.45}
 .blueprint-left:before,.blueprint-left:after{content:"";position:absolute;border:1px solid var(--line)}
 .blueprint-left:before{width:260px;height:130px;left:55px;top:120px}
@@ -89,7 +92,7 @@ main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw
 <div class="teamline"><strong>FTC TEAM 20240</strong></div>
 <p class="school">Westwood High School · Austin, Texas</p>
 <div class="achievement">
-<div class="award">2027 BIOBUZZ</div>
+<div class="award">2027 BIOBUZZ<span class="bee" aria-hidden="true">🐝</span></div>
 </div>
 </section>
 </main>
