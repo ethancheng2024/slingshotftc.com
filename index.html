@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas.">
-  <meta property="og:title" content="Slingshot Robotics | FTC Team 20240">
-  <meta property="og:description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas.">
-  <meta property="og:url" content="https://slingshotftc.com/">
-  <link rel="canonical" href="https://slingshotftc.com/">
-  <title>Slingshot Robotics | FTC Team 20240</title>
-  <link rel="icon" type="image/png" href="/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    :root{--black:#000;--deep:#0e0427;--purple:#8c52ff;--white:#fff;--muted:#c8c1d5}
-    *{box-sizing:border-box}
-    html,body{margin:0;min-height:100%}
-    body{background:var(--deep);color:var(--white);font-family:"Poppins",Arial,sans-serif}
-    .header{height:72px;width:100%;display:flex;align-items:center;padding:8px 7%;background:var(--black);position:relative;border-bottom:1px solid #1d1234}
-    .logo-wrap{width:180px;height:62px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-    .logo{width:100%;height:100%;display:block;object-fit:contain}
-    nav{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:clamp(24px,3.2vw,58px)}
-    nav a{color:var(--white);text-decoration:none;text-transform:uppercase;font-size:clamp(12px,.95vw,16px);font-weight:800;white-space:nowrap;transition:color .2s ease}
-    nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--purple)}
-    nav a:focus-visible{outline:2px solid var(--white);outline-offset:5px}
-
-    main{min-height:calc(100vh - 72px);display:flex;align-items:center}
-    .home{width:min(1120px,86vw);margin:0 auto;padding:72px 0 90px}
-    .mark{width:min(720px,72vw);height:auto;display:block;margin:0 0 42px;object-fit:contain;object-position:left center}
-    .team{font-size:clamp(16px,1.45vw,21px);font-weight:700;line-height:1.5;margin:0}
-    .team strong{color:var(--purple);font-weight:900}
-    .location{color:var(--muted);font-size:clamp(13px,1vw,15px);font-weight:500;margin:8px 0 0}
-    .achievement{margin-top:clamp(62px,9vh,105px);padding-top:24px;border-top:1px solid var(--purple);display:grid;grid-template-columns:150px minmax(0,680px);gap:clamp(24px,5vw,72px);align-items:start}
-    .year{font-size:clamp(40px,5vw,66px);font-weight:900;line-height:.9;letter-spacing:-.055em;color:var(--purple)}
-    .award{font-size:clamp(24px,3vw,43px);font-weight:800;line-height:1.05;letter-spacing:-.035em;text-transform:uppercase;margin:0}
-    .award-note{color:var(--muted);font-size:13px;font-weight:500;margin:16px 0 0}
-
-    @media(max-width:900px){
-      .header{height:auto;padding:14px 20px 18px;flex-direction:column}
-      .logo-wrap{width:160px;height:56px}
-      nav{position:static;transform:none;justify-content:center;flex-wrap:wrap;gap:14px 22px;margin-top:8px}
-      main{min-height:auto}
-      .home{width:min(88vw,680px);padding:70px 0 90px}
-      .mark{width:min(620px,88vw);margin-bottom:34px}
-      .achievement{grid-template-columns:1fr;gap:16px;margin-top:64px}
-    }
-    @media(max-width:520px){
-      nav{gap:11px 15px}
-      nav a{font-size:11px}
-      .mark{width:100%}
-    }
-    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas.">
+<title>Slingshot Robotics | FTC Team 20240</title>
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080315;--purple:#8c52ff;--white:#fff;--line:#6e3ac7}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:#fff;font-family:Poppins,Arial,sans-serif}
+.header{height:72px;background:#000;display:flex;align-items:center;padding:7px 6%;position:relative;border-bottom:1px solid #34205a}
+.header img{width:145px;height:58px;object-fit:contain}
+nav{position:absolute;left:56%;transform:translateX(-50%);display:flex;gap:clamp(30px,4vw,68px)}
+nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:14px;font-weight:800;white-space:nowrap}
+nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--purple)}
+main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.stage{width:min(1120px,82vw);position:relative;text-align:center;transform:translateY(-2%)}
+.wordmark{width:min(720px,64vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 0 0 transparent)}
+.teamline{display:flex;align-items:center;justify-content:center;gap:18px;margin:0 auto}
+.teamline:before,.teamline:after{content:"";height:2px;background:#fff;width:150px}
+.teamline strong{font-size:clamp(20px,2vw,30px);letter-spacing:.12em;white-space:nowrap}
+.school{font-size:clamp(11px,1vw,15px);letter-spacing:.28em;margin:14px 0 0;text-transform:uppercase}
+.achievement{display:flex;align-items:center;justify-content:center;gap:32px;margin-top:58px}
+.year{font-size:clamp(70px,9vw,128px);line-height:.8;font-weight:900;letter-spacing:-.06em;color:var(--purple)}
+.divider{width:2px;height:100px;background:#fff}
+.award{text-align:left;font-size:clamp(24px,3vw,42px);font-weight:900;line-height:1.02;text-transform:uppercase;max-width:410px}
+.blueprint-left{position:absolute;left:-130px;top:7%;width:410px;height:410px;border:1px solid var(--line);transform:rotate(38deg);opacity:.45}
+.blueprint-left:before,.blueprint-left:after{content:"";position:absolute;border:1px solid var(--line)}
+.blueprint-left:before{width:260px;height:130px;left:55px;top:120px}
+.blueprint-left:after{width:150px;height:270px;left:130px;top:60px}
+.arc{position:absolute;right:-175px;top:25%;width:500px;height:500px;border:1px solid var(--line);border-radius:50%;opacity:.7}
+.arc:before{content:"";position:absolute;left:50%;top:-210px;width:1px;height:620px;background:var(--line)}
+.arc:after{content:"";position:absolute;left:-80px;top:50%;width:650px;height:1px;background:var(--line)}
+.cross{position:absolute;width:28px;height:28px;opacity:.75}
+.cross:before,.cross:after{content:"";position:absolute;background:var(--purple)}
+.cross:before{width:28px;height:1px;top:13px;left:0}.cross:after{height:28px;width:1px;left:13px;top:0}
+.c1{left:12%;bottom:12%}.c2{right:8%;top:12%}.c3{right:10%;bottom:12%}
+.sidecopy{position:absolute;bottom:7%;font-size:10px;line-height:1.9;letter-spacing:.28em;text-transform:uppercase;color:#9b70ed;text-align:left}
+.sidecopy.left{left:4%}.sidecopy.right{right:4%}
+.bottomline{position:absolute;bottom:7%;left:20%;right:20%;height:1px;background:var(--line)}
+@media(max-width:850px){
+.header{height:auto;min-height:72px;padding:12px 18px;flex-direction:column}.header img{width:130px}
+nav{position:static;transform:none;flex-wrap:wrap;justify-content:center;gap:12px 22px;margin-top:8px}nav a{font-size:11px}
+main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw}.wordmark{width:min(700px,88vw)}
+.teamline:before,.teamline:after{width:45px}.teamline strong{font-size:16px}.school{letter-spacing:.15em}
+.achievement{gap:18px;margin-top:50px}.divider{height:70px}.award{font-size:clamp(19px,5vw,30px)}
+.blueprint-left,.arc,.sidecopy,.bottomline,.cross{display:none}
+}
+@media(max-width:520px){.achievement{align-items:flex-start}.year{font-size:17vw}.award{font-size:5vw}.divider{height:58px}}
+</style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo-wrap"><img class="logo" src="./logo.png" alt="Slingshot FTC Team 20240 logo"></div>
-    <nav aria-label="Main navigation">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/about/">About</a>
-      <a href="/robot/">Robot</a>
-      <a href="/outreach/">Outreach</a>
-      <a href="/sponsors/">Sponsors</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="home" aria-label="Slingshot FTC Team 20240">
-      <img class="mark" src="./logo.png" alt="Slingshot">
-      <p class="team"><strong>FTC TEAM 20240</strong></p>
-      <p class="location">Westwood High School · Austin, Texas</p>
-
-      <div class="achievement">
-        <div class="year">2026</div>
-        <div>
-          <p class="award">FIRST World Championship Qualifier</p>
-          <p class="award-note">FIRST Tech Challenge</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<header class="header">
+<img src="./logo.png" alt="Slingshot FTC Team 20240 logo">
+<nav aria-label="Main navigation">
+<a href="/" aria-current="page">Home</a>
+<a href="/about/">About</a>
+<a href="/robot/">Robot</a>
+<a href="/outreach/">Outreach</a>
+<a href="/sponsors/">Sponsors</a>
+<a href="/contact/">Contact</a>
+</nav>
+</header>
+<main>
+<div class="blueprint-left" aria-hidden="true"></div>
+<div class="arc" aria-hidden="true"></div>
+<div class="cross c1" aria-hidden="true"></div><div class="cross c2" aria-hidden="true"></div><div class="cross c3" aria-hidden="true"></div>
+<div class="sidecopy left" aria-hidden="true">Engineering<br>Competition<br>Outreach<br>Community</div>
+<div class="sidecopy right" aria-hidden="true">Design<br>Build<br>Software<br>Impact</div>
+<div class="bottomline" aria-hidden="true"></div>
+<section class="stage" aria-label="Slingshot FTC Team 20240">
+<img class="wordmark" src="./logo.png" alt="Slingshot">
+<div class="teamline"><strong>FTC TEAM 20240</strong></div>
+<p class="school">Westwood High School · Austin, Texas</p>
+<div class="achievement">
+<div class="year">2026</div>
+<div class="divider" aria-hidden="true"></div>
+<div class="award">FIRST World<br>Championship<br>Qualifier</div>
+</div>
+</section>
+</main>
 </body>
 </html>
