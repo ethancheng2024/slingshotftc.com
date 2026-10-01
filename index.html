@@ -11,85 +11,25 @@
     * { box-sizing: border-box; }
     html, body { margin: 0; min-height: 100%; background: #000; }
     body { font-family: "Poppins", Arial, sans-serif; }
-
-    .header {
-      height: 170px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      padding: 14px 5.5%;
-      background: #000;
-    }
-
-    .logo-wrap {
-      width: 260px;
-      height: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex: 0 0 auto;
-      overflow: hidden;
-    }
-
-    .logo {
-      width: 100%;
-      height: 100%;
-      display: block;
-      object-fit: contain;
-      object-position: center center;
-    }
-
-    nav {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: clamp(32px, 4.6vw, 90px);
-      padding-left: 45px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: clamp(17px, 1.35vw, 27px);
-      font-weight: 800;
-      white-space: nowrap;
-      transition: color .28s ease;
-    }
-
-    nav a:hover,
-    nav a:focus-visible { color: #8c45ff; }
-
-    @media (max-width: 900px) {
-      .header {
-        height: auto;
-        padding: 18px 22px 26px;
-        flex-direction: column;
-        align-items: center;
-      }
-      .logo-wrap { width: 210px; height: 115px; }
-      nav {
-        width: 100%;
-        padding: 20px 0 0;
-        gap: 20px 28px;
-        flex-wrap: wrap;
-      }
-      nav a { font-size: 15px; }
+    .header { height:170px; width:100%; display:flex; align-items:center; padding:14px 5.5%; background:#000; }
+    .logo-wrap { width:260px; height:140px; display:flex; align-items:center; justify-content:center; flex:0 0 auto; overflow:hidden; }
+    .logo { width:100%; height:100%; display:block; object-fit:contain; object-position:center center; }
+    nav { flex:1; display:flex; align-items:center; justify-content:center; gap:clamp(32px,4.6vw,90px); padding-left:45px; }
+    nav a { color:#fff; text-decoration:none; text-transform:uppercase; font-size:clamp(17px,1.35vw,27px); font-weight:800; white-space:nowrap; transition:color .28s ease; }
+    nav a:hover, nav a:focus-visible { color:#8c45ff; }
+    @media (max-width:900px) {
+      .header { height:auto; padding:18px 22px 26px; flex-direction:column; align-items:center; }
+      .logo-wrap { width:210px; height:115px; }
+      nav { width:100%; padding:20px 0 0; gap:20px 28px; flex-wrap:wrap; }
+      nav a { font-size:15px; }
     }
   </style>
 </head>
 <body>
   <header class="header">
-    <div class="logo-wrap">
-      <img class="logo" src="slingshot-logo.png" alt="Slingshot FTC Team 20240">
-    </div>
+    <div class="logo-wrap"><img class="logo" src="./logo.png" alt="Slingshot FTC Team 20240"></div>
     <nav aria-label="Main navigation">
-      <a href="#">Home</a>
-      <a href="#">Our Team</a>
-      <a href="#">Our Robot</a>
-      <a href="#">Sponsors</a>
-      <a href="#">Outreach</a>
+      <a href="#">Home</a><a href="#">Our Team</a><a href="#">Our Robot</a><a href="#">Sponsors</a><a href="#">Outreach</a>
     </nav>
   </header>
 </body>
