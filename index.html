@@ -14,7 +14,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:var(--bg);color:#fff;font-family:Poppins,Arial,sans-serif}
 .header{height:72px;background:#000;display:flex;align-items:center;padding:7px 6%;position:relative;border-bottom:1px solid #34205a}
-.header img{width:145px;height:58px;object-fit:contain}
+.header-logo{display:flex;align-items:center;text-decoration:none}.header img{width:145px;height:58px;object-fit:contain}
 nav{position:absolute;left:56%;transform:translateX(-50%);display:flex;gap:clamp(30px,4vw,68px)}
 nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:14px;font-weight:800;white-space:nowraptransition:color .28s ease}
 nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--purple)}
@@ -54,7 +54,7 @@ main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw
 </head>
 <body>
 <header class="header">
-<img src="./logo.png" alt="Slingshot FTC Team 20240 logo">
+<a class="header-logo" href="/" aria-label="Slingshot home"><img src="./logo.png" alt="Slingshot FTC Team 20240 logo"></a>
 <nav aria-label="Main navigation">
 <a href="/" aria-current="page">Home</a>
 <a href="/about/">About</a>
@@ -74,7 +74,7 @@ main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw
 <div class="teamline"><strong>FTC TEAM 20240</strong></div>
 <p class="school">Westwood High School · Austin, Texas</p>
 <div class="achievement">
-<div class="award">27' BIOBUZZ</div>
+<div class="award">2027 BIOBUZZ</div>
 </div>
 </section>
 </main>
