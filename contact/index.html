@@ -1,1 +1,156 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Slingshot FTC 20240</title><style>html,body{margin:0;min-height:100%;background:#080315}body{min-height:100vh}</style></head><body></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas.">
+<title>Slingshot Robotics | FTC Team 20240</title>
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080315;--purple:#8c52ff;--white:#fff;--line:#6e3ac7}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:#fff;font-family:Poppins,Arial,sans-serif}
+.header{height:72px;background:#000;display:flex;align-items:center;padding:7px 6%;position:relative;border-bottom:1px solid #34205a}
+.header-logo{display:flex;align-items:center;text-decoration:none}.header img{width:145px;height:58px;object-fit:contain}
+.header nav{position:absolute;left:56%;transform:translateX(-50%);display:flex;gap:clamp(30px,4vw,68px)}
+.header nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:14px;font-weight:800;white-space:nowraptransition:color .28s ease}
+.header nav a:hover,.header nav a:focus-visible,.header nav a[aria-current="page"]{color:var(--purple)}
+main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.crystals{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.crystal{position:absolute;width:15px;height:15px;border:2px solid #8c52ff;transform:rotate(45deg);opacity:.28;animation:twinkle 3.4s ease-in-out infinite}
+.crystal:after{content:"";position:absolute;inset:3px;border:1px solid rgba(255,255,255,.8)}
+.crystal:nth-child(1){left:8%;top:18%;animation-delay:-.4s}
+.crystal:nth-child(2){left:18%;top:66%;width:7px;height:7px;animation-delay:-2.1s}
+.crystal:nth-child(3){left:31%;top:23%;width:6px;height:6px;animation-delay:-3.3s}
+.crystal:nth-child(4){left:43%;top:76%;width:12px;height:12px;animation-delay:-1.2s}
+.crystal:nth-child(5){left:58%;top:15%;width:8px;height:8px;animation-delay:-2.8s}
+.crystal:nth-child(6){left:69%;top:68%;width:6px;height:6px;animation-delay:-.9s}
+.crystal:nth-child(7){left:82%;top:25%;width:11px;height:11px;animation-delay:-3.8s}
+.crystal:nth-child(8){left:91%;top:73%;width:7px;height:7px;animation-delay:-1.7s}
+.crystal:nth-child(9){left:74%;top:43%;width:5px;height:5px;animation-delay:-2.5s}
+.crystal:nth-child(10){left:24%;top:45%;width:5px;height:5px;animation-delay:-4.1s}
+@keyframes twinkle{0%,100%{opacity:.12;transform:rotate(45deg) scale(.65)}45%{opacity:1;transform:rotate(45deg) scale(1.45)}60%{opacity:.38;transform:rotate(45deg) scale(.9)}}
+.stage{width:min(1120px,82vw);position:relative;z-index:1;text-align:center;transform:translateY(-2%)}
+.wordmark{width:min(720px,64vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 0 0 transparent)}
+.teamline{display:flex;align-items:center;justify-content:center;gap:18px;margin:0 auto}
+.teamline:before,.teamline:after{content:"";height:2px;background:#fff;width:150px}
+.teamline strong{font-size:clamp(20px,2vw,30px);letter-spacing:.12em;white-space:nowrap}
+.school{font-size:clamp(11px,1vw,15px);letter-spacing:.28em;margin:14px 0 0;text-transform:uppercase}
+.achievement{display:flex;align-items:center;justify-content:center;gap:32px;margin-top:58px}
+.year{font-family:"Poppins",Arial,sans-serif;font-size:clamp(58px,7vw,100px);line-height:.85;font-weight:900;letter-spacing:-.055em;color:#ffe500}
+.divider{display:none}
+.award{text-align:center;color:#ffe500;max-width:none;position:relative;cursor:default;line-height:.8}.biobuzz-word{display:inline-block;font-family:Impact,"Arial Black",sans-serif;font-size:clamp(60px,6.7vw,98px);font-weight:900;font-style:normal;letter-spacing:-.045em;text-transform:uppercase;transform:scaleX(1.1);position:relative}.biobuzz-tm{position:absolute;left:100%;top:.06em;margin-left:.16em;font-family:"Poppins",Arial,sans-serif;font-size:.14em;font-weight:800;letter-spacing:0;line-height:1;transform:none}.biobuzz-year{display:block;margin-top:15px;font-family:"Poppins",Arial,sans-serif;font-size:clamp(22px,2.3vw,34px);font-weight:800;font-style:normal;letter-spacing:.18em}
+
+.blueprint-left{position:absolute;left:-130px;top:7%;width:410px;height:410px;border:1px solid var(--line);transform:rotate(38deg);opacity:.45}
+.blueprint-left:before,.blueprint-left:after{content:"";position:absolute;border:1px solid var(--line)}
+.blueprint-left:before{width:260px;height:130px;left:55px;top:120px}
+.blueprint-left:after{width:150px;height:270px;left:130px;top:60px}
+.arc{position:absolute;right:-175px;top:25%;width:500px;height:500px;border:1px solid var(--line);border-radius:50%;opacity:.7}
+.arc:before{content:"";position:absolute;left:50%;top:-210px;width:1px;height:620px;background:var(--line)}
+.arc:after{content:"";position:absolute;left:-80px;top:50%;width:650px;height:1px;background:var(--line)}
+.cross{position:absolute;width:28px;height:28px;opacity:.75}
+.cross:before,.cross:after{content:"";position:absolute;background:var(--purple)}
+.cross:before{width:28px;height:1px;top:13px;left:0}.cross:after{height:28px;width:1px;left:13px;top:0}
+.c1{left:12%;bottom:12%}.c2{right:8%;top:12%}.c3{right:10%;bottom:12%}
+.sidecopy{display:none}.bottomline{display:none}
+@media(max-width:850px){
+.header{height:auto;min-height:72px;padding:12px 18px;flex-direction:column}.header img{width:130px}
+.header nav{position:static;transform:none;flex-wrap:wrap;justify-content:center;gap:12px 22px;margin-top:8px}nav a{font-size:11px}
+main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw}.wordmark{width:min(700px,88vw)}
+.teamline:before,.teamline:after{width:45px}.teamline strong{font-size:16px}.school{letter-spacing:.15em}
+.achievement{gap:18px;margin-top:50px}.divider{height:70px}.award{font-size:clamp(19px,5vw,30px)}
+.blueprint-left,.arc,.sidecopy,.bottomline,.cross{display:none}
+}
+@media(max-width:520px){.achievement{align-items:flex-start}.year{font-size:17vw}.award{font-size:5vw}.divider{height:58px}}
+
+.site-footer{position:relative;background:#050208;border-top:1px solid rgba(140,82,255,.32);padding:52px max(5vw,28px) 20px;font-family:"Poppins",Arial,sans-serif}
+.footer-grid{max-width:1280px;margin:auto;display:grid;grid-template-columns:1.35fr .7fr 1fr;gap:70px}
+.footer-brand img{width:150px;height:auto;display:block;margin-bottom:18px}
+.footer-brand p,.footer-contact p{color:#aaa1b9;font-size:13px;line-height:1.8;margin:0 0 14px}
+.footer-title{color:#8c52ff;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a,.footer-contact a{color:#fff;text-decoration:none;font-size:13px;transition:color .35s ease,opacity .35s ease}
+.footer-links a:hover,.footer-contact a:hover{color:#8c52ff;opacity:.75}
+.footer-sponsor{display:inline-block;margin-top:10px;border:1px solid #8c52ff;padding:10px 15px;color:#fff!important;font-size:11px!important;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.footer-bottom{max-width:1280px;margin:42px auto 0;padding-top:16px;border-top:1px solid rgba(140,82,255,.24);display:flex;justify-content:space-between;gap:20px;color:#756d83;font-size:10px;letter-spacing:.05em}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr;gap:34px}.footer-bottom{flex-direction:column}.site-footer{padding-top:40px}}
+
+/* Slingshot trajectory page transition */
+.trajectory-transition{position:fixed;inset:0;z-index:10000;pointer-events:none;overflow:hidden}
+.trajectory-transition .trajectory-line{position:absolute;width:145vw;height:1px;background:#8c52ff;left:-22vw;top:54%;transform:translate3d(-115vw,0,0) rotate(-12deg);transform-origin:center;will-change:transform}
+.trajectory-transition .trajectory-wipe{position:absolute;inset:-20vh -18vw;background:#8c52ff;clip-path:polygon(0 18%,84% 0,100% 72%,15% 100%);transform:translate3d(-125%,0,0) skewX(-8deg);will-change:transform}
+body.transition-in .trajectory-line{animation:trajectoryLineIn .58s cubic-bezier(.2,.75,.25,1) both}
+body.transition-in .trajectory-wipe{animation:trajectoryReveal .72s cubic-bezier(.7,0,.25,1) both}
+body.transition-in main,body.transition-in .site-footer{animation:contentReveal .62s .12s ease-out both}
+body.transition-out .trajectory-line{animation:trajectoryLineOut .48s cubic-bezier(.2,.75,.25,1) both}
+body.transition-out .trajectory-wipe{animation:trajectoryCover .58s cubic-bezier(.7,0,.25,1) forwards}
+body.transition-out main,body.transition-out .site-footer{animation:contentExit .38s ease forwards}
+@keyframes trajectoryLineIn{0%{transform:translate3d(-115vw,0,0) rotate(-12deg)}100%{transform:translate3d(115vw,0,0) rotate(-12deg)}}
+@keyframes trajectoryReveal{0%{transform:translate3d(0,0,0) skewX(-8deg)}100%{transform:translate3d(125%,0,0) skewX(-8deg)}}
+@keyframes trajectoryLineOut{0%{transform:translate3d(-115vw,0,0) rotate(-12deg)}100%{transform:translate3d(115vw,0,0) rotate(-12deg)}}
+@keyframes trajectoryCover{0%{transform:translate3d(-125%,0,0) skewX(-8deg)}100%{transform:translate3d(0,0,0) skewX(-8deg)}}
+@keyframes contentReveal{0%{opacity:0;transform:translate3d(0,10px,0)}100%{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes contentExit{to{opacity:.25;transform:translate3d(0,-4px,0)}}
+@media(prefers-reduced-motion:reduce){.trajectory-transition{display:none!important}body.transition-in main,body.transition-in .site-footer,body.transition-out main,body.transition-out .site-footer{animation:none!important}}
+</style>
+</head>
+<body class="transition-in">
+<div class="trajectory-transition" aria-hidden="true"><div class="trajectory-line"></div><div class="trajectory-wipe"></div></div>
+<header class="header">
+<a class="header-logo" href="/" aria-label="Slingshot home"><img src="./logo.png" alt="Slingshot FTC Team 20240 logo"></a>
+<nav aria-label="Main navigation">
+<a href="/" >Home</a>
+<a href="/about/">About</a>
+<a href="/outreach/">Outreach</a>
+<a href="/sponsors/">Sponsors</a>
+<a href="/contact/" aria-current="page">Contact</a>
+</nav>
+</header>
+<main aria-label="Contact page"></main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" aria-label="Slingshot home"><img src="./logo.png" alt="Slingshot FTC Team 20240 logo"></a>
+      <p>FTC Team 20240<br>Westwood High School · Austin, Texas</p>
+      <a href="https://www.instagram.com/slingshot20240ftc/" target="_blank" rel="noopener" aria-label="Slingshot on Instagram" class="footer-social">@slingshot20240ftc</a>
+    </div>
+    <div class="footer-pages">
+      <div class="footer-title">Pages</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/">Home</a><a href="/about/">About</a><a href="/outreach/">Outreach</a><a href="/sponsors/">Sponsors</a><a href="/contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-title">Contact</div>
+      <p><a href="mailto:slingshotftc@gmail.com">slingshotftc@gmail.com</a></p>
+      <p>FTC Team 20240</p>
+      <p>Interested in supporting Slingshot?</p>
+      <a class="footer-sponsor" href="/sponsors/">Become a Sponsor</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Slingshot Robotics · FTC Team 20240</span>
+    <span>Westwood High School · Austin, Texas</span>
+  </div>
+</footer>
+<script>
+(() => {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduced) setTimeout(() => document.body.classList.remove('transition-in'), 780);
+  document.addEventListener('click', e => {
+    const a=e.target.closest('a[href]');
+    if(!a || reduced || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || a.target==='_blank') return;
+    const url=new URL(a.href,location.href);
+    if(url.origin!==location.origin || url.href===location.href || url.protocol==='mailto:') return;
+    e.preventDefault();
+    document.body.classList.remove('transition-in');
+    document.body.classList.add('transition-out');
+    setTimeout(()=>{location.href=url.href},560);
+  });
+})();
+</script>
+</body>
+</html>
