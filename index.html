@@ -65,6 +65,18 @@ main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw
 .blueprint-left,.arc,.sidecopy,.bottomline,.cross{display:none}
 }
 @media(max-width:520px){.achievement{align-items:flex-start}.year{font-size:17vw}.award{font-size:5vw}.divider{height:58px}}
+
+.site-footer{position:relative;background:#050208;border-top:1px solid rgba(140,82,255,.32);padding:52px max(5vw,28px) 20px;font-family:"Poppins",Arial,sans-serif}
+.footer-grid{max-width:1280px;margin:auto;display:grid;grid-template-columns:1.35fr .7fr 1fr;gap:70px}
+.footer-brand img{width:150px;height:auto;display:block;margin-bottom:18px}
+.footer-brand p,.footer-contact p{color:#aaa1b9;font-size:13px;line-height:1.8;margin:0 0 14px}
+.footer-title{color:#8c52ff;font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a,.footer-contact a{color:#fff;text-decoration:none;font-size:13px;transition:color .35s ease,opacity .35s ease}
+.footer-links a:hover,.footer-contact a:hover{color:#8c52ff;opacity:.75}
+.footer-sponsor{display:inline-block;margin-top:10px;border:1px solid #8c52ff;padding:10px 15px;color:#fff!important;font-size:11px!important;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.footer-bottom{max-width:1280px;margin:42px auto 0;padding-top:16px;border-top:1px solid rgba(140,82,255,.24);display:flex;justify-content:space-between;gap:20px;color:#756d83;font-size:10px;letter-spacing:.05em}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr;gap:34px}.footer-bottom{flex-direction:column}.site-footer{padding-top:40px}}
 </style>
 </head>
 <body>
@@ -95,6 +107,33 @@ main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw
 </section>
 </main>
 
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="/" aria-label="Slingshot home"><img src="./logo.png" alt="Slingshot FTC Team 20240 logo"></a>
+      <p>FTC Team 20240<br>Westwood High School · Austin, Texas</p>
+      <a href="https://www.instagram.com/slingshot20240/" target="_blank" rel="noopener" aria-label="Slingshot on Instagram" style="color:#8c52ff;text-decoration:none;font-size:12px;font-weight:800">@SLINGSHOT20240</a>
+    </div>
+    <div>
+      <div class="footer-title">Pages</div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/">Home</a><a href="/about/">About</a><a href="/robot/">Robot</a><a href="/outreach/">Outreach</a><a href="/sponsors/">Sponsors</a><a href="/contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-title">Contact</div>
+      <p><a href="mailto:slingshotftc@gmail.com">slingshotftc@gmail.com</a></p>
+      <p>FTC Team 20240</p>
+      <p>Interested in supporting Slingshot?</p>
+      <a class="footer-sponsor" href="/sponsors/">Become a Sponsor</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Slingshot Robotics · FTC Team 20240</span>
+    <span>Westwood High School · Austin, Texas</span>
+  </div>
+</footer>
 <script>
 (() => {
   const trigger = document.getElementById('biobuzz');
