@@ -14,48 +14,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root { --black:#000; --deep:#0e0427; --purple:#8c52ff; --white:#fff; --muted:#c8c1d5; }
-    * { box-sizing:border-box; }
-    html,body { margin:0; min-height:100%; }
-    body { background:var(--deep); color:var(--white); font-family:"Poppins",Arial,sans-serif; }
-    .header { height:72px; width:100%; display:flex; align-items:center; padding:8px 7%; background:var(--black); position:relative; z-index:10; border-bottom:1px solid #21163b; }
-    .logo-wrap { width:180px; height:62px; display:flex; align-items:center; justify-content:center; flex:0 0 auto; overflow:hidden; }
-    .logo { width:100%; height:100%; display:block; object-fit:contain; }
-    nav { position:absolute; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:clamp(24px,3.2vw,58px); }
-    nav a { color:var(--white); text-decoration:none; text-transform:uppercase; font-size:clamp(12px,.95vw,16px); font-weight:800; white-space:nowrap; transition:color .2s ease; }
-    nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { color:var(--purple); }
-    nav a:focus-visible { outline:2px solid var(--white); outline-offset:6px; }
+    :root{--black:#000;--deep:#0e0427;--purple:#8c52ff;--white:#fff;--muted:#c8c1d5}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%}
+    body{background:var(--deep);color:var(--white);font-family:"Poppins",Arial,sans-serif}
+    .header{height:72px;width:100%;display:flex;align-items:center;padding:8px 7%;background:var(--black);position:relative;border-bottom:1px solid #1d1234}
+    .logo-wrap{width:180px;height:62px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .logo{width:100%;height:100%;display:block;object-fit:contain}
+    nav{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:clamp(24px,3.2vw,58px)}
+    nav a{color:var(--white);text-decoration:none;text-transform:uppercase;font-size:clamp(12px,.95vw,16px);font-weight:800;white-space:nowrap;transition:color .2s ease}
+    nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--purple)}
+    nav a:focus-visible{outline:2px solid var(--white);outline-offset:5px}
 
-    main { min-height:calc(100vh - 72px); display:grid; align-items:stretch; overflow:hidden; }
-    .home { width:min(1240px,86vw); margin:0 auto; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr); align-items:center; gap:clamp(40px,7vw,110px); padding:clamp(60px,8vh,110px) 0; }
-    .identity { position:relative; }
-    .identity:before { content:"20240"; display:block; font-size:13px; font-weight:800; letter-spacing:.24em; color:var(--purple); margin-bottom:22px; }
-    h1 { margin:0; font-size:clamp(72px,12.5vw,176px); line-height:.76; letter-spacing:-.085em; font-weight:900; }
-    .team-line { margin:34px 0 0; max-width:660px; font-size:clamp(17px,1.55vw,23px); line-height:1.55; font-weight:500; }
-    .team-line strong { color:var(--purple); font-weight:800; }
+    main{min-height:calc(100vh - 72px);display:flex;align-items:center}
+    .home{width:min(1120px,86vw);margin:0 auto;padding:72px 0 90px}
+    .mark{width:min(720px,72vw);height:auto;display:block;margin:0 0 42px;object-fit:contain;object-position:left center}
+    .team{font-size:clamp(16px,1.45vw,21px);font-weight:700;line-height:1.5;margin:0}
+    .team strong{color:var(--purple);font-weight:900}
+    .location{color:var(--muted);font-size:clamp(13px,1vw,15px);font-weight:500;margin:8px 0 0}
+    .achievement{margin-top:clamp(62px,9vh,105px);padding-top:24px;border-top:1px solid var(--purple);display:grid;grid-template-columns:150px minmax(0,680px);gap:clamp(24px,5vw,72px);align-items:start}
+    .year{font-size:clamp(40px,5vw,66px);font-weight:900;line-height:.9;letter-spacing:-.055em;color:var(--purple)}
+    .award{font-size:clamp(24px,3vw,43px);font-weight:800;line-height:1.05;letter-spacing:-.035em;text-transform:uppercase;margin:0}
+    .award-note{color:var(--muted);font-size:13px;font-weight:500;margin:16px 0 0}
 
-    .record { align-self:stretch; display:flex; flex-direction:column; justify-content:center; border-left:1px solid var(--purple); padding-left:clamp(28px,4vw,60px); }
-    .record-year { font-size:clamp(54px,7vw,94px); line-height:.85; letter-spacing:-.07em; font-weight:900; color:var(--purple); }
-    .record-title { margin-top:20px; font-size:clamp(24px,2.6vw,38px); line-height:1.05; letter-spacing:-.04em; font-weight:800; text-transform:uppercase; }
-    .record-copy { margin:22px 0 0; color:var(--muted); font-size:14px; line-height:1.7; max-width:380px; }
-
-    .trajectory { position:absolute; width:42vw; height:42vw; max-width:620px; max-height:620px; right:-22vw; bottom:-25vw; border:1px solid rgba(140,82,255,.42); border-radius:50%; pointer-events:none; }
-    .trajectory:after { content:""; position:absolute; width:9px; height:9px; background:var(--purple); top:13%; left:18%; transform:rotate(45deg); }
-
-    @media (max-width:900px) {
-      .header { height:auto; padding:14px 20px 18px; flex-direction:column; }
-      .logo-wrap { width:160px; height:56px; }
-      nav { position:static; transform:none; justify-content:center; flex-wrap:wrap; gap:14px 22px; margin-top:8px; }
-      .home { width:min(90vw,700px); grid-template-columns:1fr; padding:64px 0 80px; }
-      .record { border-left:0; border-top:1px solid var(--purple); padding:34px 0 0; }
-      .trajectory { display:none; }
+    @media(max-width:900px){
+      .header{height:auto;padding:14px 20px 18px;flex-direction:column}
+      .logo-wrap{width:160px;height:56px}
+      nav{position:static;transform:none;justify-content:center;flex-wrap:wrap;gap:14px 22px;margin-top:8px}
+      main{min-height:auto}
+      .home{width:min(88vw,680px);padding:70px 0 90px}
+      .mark{width:min(620px,88vw);margin-bottom:34px}
+      .achievement{grid-template-columns:1fr;gap:16px;margin-top:64px}
     }
-    @media (max-width:520px) {
-      nav { gap:12px 16px; }
-      nav a { font-size:11px; }
-      h1 { font-size:21vw; }
+    @media(max-width:520px){
+      nav{gap:11px 15px}
+      nav a{font-size:11px}
+      .mark{width:100%}
     }
-    @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
   </style>
 </head>
 <body>
@@ -72,17 +68,17 @@
   </header>
 
   <main>
-    <section class="home" aria-labelledby="home-title">
-      <div class="identity">
-        <h1 id="home-title">SLINGSHOT</h1>
-        <p class="team-line"><strong>FTC Team 20240</strong> · Westwood High School · Austin, Texas</p>
-        <div class="trajectory" aria-hidden="true"></div>
-      </div>
+    <section class="home" aria-label="Slingshot FTC Team 20240">
+      <img class="mark" src="./logo.png" alt="Slingshot">
+      <p class="team"><strong>FTC TEAM 20240</strong></p>
+      <p class="location">Westwood High School · Austin, Texas</p>
 
-      <div class="record">
-        <div class="record-year">2026</div>
-        <div class="record-title">FIRST World Championship Qualifier</div>
-        <p class="record-copy">Slingshot advanced through the 2026 FTC season to qualify for the FIRST World Championship.</p>
+      <div class="achievement">
+        <div class="year">2026</div>
+        <div>
+          <p class="award">FIRST World Championship Qualifier</p>
+          <p class="award-note">FIRST Tech Challenge</p>
+        </div>
       </div>
     </section>
   </main>
