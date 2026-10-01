@@ -15,9 +15,9 @@
 html,body{margin:0;min-height:100%;background:var(--bg);color:#fff;font-family:Poppins,Arial,sans-serif}
 .header{height:72px;background:#000;display:flex;align-items:center;padding:7px 6%;position:relative;border-bottom:1px solid #34205a}
 .header-logo{display:flex;align-items:center;text-decoration:none}.header img{width:145px;height:58px;object-fit:contain}
-nav{position:absolute;left:56%;transform:translateX(-50%);display:flex;gap:clamp(30px,4vw,68px)}
-nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:14px;font-weight:800;white-space:nowraptransition:color .28s ease}
-nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--purple)}
+.header nav{position:absolute;left:56%;transform:translateX(-50%);display:flex;gap:clamp(30px,4vw,68px)}
+.header nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:14px;font-weight:800;white-space:nowraptransition:color .28s ease}
+.header nav a:hover,.header nav a:focus-visible,.header nav a[aria-current="page"]{color:var(--purple)}
 main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .crystals{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .crystal{position:absolute;width:15px;height:15px;border:2px solid #8c52ff;transform:rotate(45deg);opacity:.28;animation:twinkle 3.4s ease-in-out infinite}
@@ -58,7 +58,7 @@ main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidde
 .sidecopy{display:none}.bottomline{display:none}
 @media(max-width:850px){
 .header{height:auto;min-height:72px;padding:12px 18px;flex-direction:column}.header img{width:130px}
-nav{position:static;transform:none;flex-wrap:wrap;justify-content:center;gap:12px 22px;margin-top:8px}nav a{font-size:11px}
+.header nav{position:static;transform:none;flex-wrap:wrap;justify-content:center;gap:12px 22px;margin-top:8px}nav a{font-size:11px}
 main{height:auto;min-height:calc(100vh - 100px);padding:70px 0}.stage{width:90vw}.wordmark{width:min(700px,88vw)}
 .teamline:before,.teamline:after{width:45px}.teamline strong{font-size:16px}.school{letter-spacing:.15em}
 .achievement{gap:18px;margin-top:50px}.divider{height:70px}.award{font-size:clamp(19px,5vw,30px)}
