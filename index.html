@@ -20,8 +20,8 @@ nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:14px;fo
 nav a:hover,nav a:focus-visible,nav a[aria-current="page"]{color:var(--purple)}
 main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .crystals{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
-.crystal{position:absolute;width:10px;height:10px;border:1px solid #8c52ff;transform:rotate(45deg);opacity:.16;animation:twinkle 4.6s ease-in-out infinite}
-.crystal:after{content:"";position:absolute;inset:2px;border:1px solid rgba(255,255,255,.5)}
+.crystal{position:absolute;width:15px;height:15px;border:2px solid #8c52ff;transform:rotate(45deg);opacity:.28;animation:twinkle 3.4s ease-in-out infinite}
+.crystal:after{content:"";position:absolute;inset:3px;border:1px solid rgba(255,255,255,.8)}
 .crystal:nth-child(1){left:8%;top:18%;animation-delay:-.4s}
 .crystal:nth-child(2){left:18%;top:66%;width:7px;height:7px;animation-delay:-2.1s}
 .crystal:nth-child(3){left:31%;top:23%;width:6px;height:6px;animation-delay:-3.3s}
@@ -32,7 +32,7 @@ main{height:calc(100vh - 72px);min-height:650px;position:relative;overflow:hidde
 .crystal:nth-child(8){left:91%;top:73%;width:7px;height:7px;animation-delay:-1.7s}
 .crystal:nth-child(9){left:74%;top:43%;width:5px;height:5px;animation-delay:-2.5s}
 .crystal:nth-child(10){left:24%;top:45%;width:5px;height:5px;animation-delay:-4.1s}
-@keyframes twinkle{0%,100%{opacity:.08;transform:rotate(45deg) scale(.7)}45%{opacity:.72;transform:rotate(45deg) scale(1.15)}60%{opacity:.28;transform:rotate(45deg) scale(.9)}}
+@keyframes twinkle{0%,100%{opacity:.12;transform:rotate(45deg) scale(.65)}45%{opacity:1;transform:rotate(45deg) scale(1.45)}60%{opacity:.38;transform:rotate(45deg) scale(.9)}}
 .stage{width:min(1120px,82vw);position:relative;z-index:1;text-align:center;transform:translateY(-2%)}
 .wordmark{width:min(720px,64vw);height:auto;display:block;margin:0 auto 18px;filter:drop-shadow(0 0 0 transparent)}
 .teamline{display:flex;align-items:center;justify-content:center;gap:18px;margin:0 auto}
