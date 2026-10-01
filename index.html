@@ -3,116 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas. 2026 FIRST World Championship Qualifier.">
+  <meta name="description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas.">
   <meta property="og:title" content="Slingshot Robotics | FTC Team 20240">
-  <meta property="og:description" content="Westwood High School FTC Team 20240 — engineering, competition, outreach, and community impact.">
+  <meta property="og:description" content="FTC Team 20240 Slingshot Robotics at Westwood High School in Austin, Texas.">
   <meta property="og:url" content="https://slingshotftc.com/">
   <link rel="canonical" href="https://slingshotftc.com/">
   <title>Slingshot Robotics | FTC Team 20240</title>
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{--ink:#06020f;--panel:#0e0427;--purple:#8c52ff;--white:#fff;--muted:#b8afc9;--line:rgba(140,82,255,.36)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--white);font-family:"Poppins",Arial,sans-serif}a{color:inherit}
-    .header{position:sticky;top:0;z-index:50;height:72px;width:100%;display:flex;align-items:center;padding:8px 7%;background:#000;border-bottom:1px solid rgba(255,255,255,.06)}
-    .logo-wrap{width:180px;height:62px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;overflow:hidden}.logo{width:100%;height:100%;display:block;object-fit:contain}
-    nav{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:clamp(24px,3vw,56px)}nav a{text-decoration:none;text-transform:uppercase;font-size:clamp(12px,.9vw,16px);font-weight:800;white-space:nowrap;transition:color .25s ease}nav a:hover,nav a:focus-visible{color:var(--purple)}
-    main{overflow:hidden}.wrap{width:min(1180px,86vw);margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:800;color:var(--purple)}
-    .hero{min-height:calc(100vh - 72px);display:grid;align-items:center;position:relative;background:var(--panel);border-bottom:1px solid var(--line)}.hero:after{content:"";position:absolute;right:-10vw;top:14%;width:44vw;height:44vw;border:1px solid var(--line);border-radius:50%;clip-path:inset(0 0 45% 0);transform:rotate(-13deg);pointer-events:none}
-    .hero h1{font-size:clamp(72px,14vw,190px);line-height:.78;letter-spacing:-.085em;margin:22px 0 34px;font-weight:900;max-width:1050px}.hero h1 span{color:var(--purple)}.hero-meta{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:end;max-width:900px}.hero-meta strong{font-size:clamp(20px,2vw,30px);line-height:1.05}.hero-meta p{color:var(--muted);font-size:15px;line-height:1.8;margin:0}
-    section{padding:clamp(90px,12vw,170px) 0;border-bottom:1px solid var(--line)}.world{background:#000}.world-grid{display:grid;grid-template-columns:.55fr 1.45fr;gap:6vw;align-items:start}.year{font-size:clamp(80px,12vw,170px);font-weight:900;color:var(--purple);line-height:.75;letter-spacing:-.08em}.world h2{font-size:clamp(45px,7vw,100px);line-height:.92;letter-spacing:-.055em;margin:0 0 30px;text-transform:uppercase}.world p{color:var(--muted);max-width:650px;line-height:1.8}
-    .history{background:var(--panel)}.history h2,.impact h2,.support h2{font-size:clamp(42px,6vw,82px);line-height:.95;letter-spacing:-.05em;margin:16px 0 70px}.timeline{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--purple)}.moment{padding:28px 28px 0 0;min-height:220px;border-right:1px solid var(--line)}.moment:last-child{border-right:0;padding-left:28px}.moment:not(:first-child){padding-left:28px}.moment .date{font-size:32px;font-weight:900;color:var(--purple)}.moment p{color:var(--muted);font-size:13px;line-height:1.7}.moment strong{color:#fff}
-    .paths{background:#000;padding:0}.path{display:grid;grid-template-columns:100px 1fr auto;gap:30px;align-items:center;padding:52px 7vw;border-bottom:1px solid var(--line);text-decoration:none}.path .num{color:var(--purple);font-weight:800}.path h3{font-size:clamp(34px,5vw,68px);margin:0;letter-spacing:-.05em;text-transform:uppercase}.path p{color:var(--muted);max-width:360px;font-size:13px}.path .arrow{font-size:32px;color:var(--purple)}.path:hover h3{color:var(--purple)}
-    .impact{background:var(--panel)}.impact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:8vw;align-items:end}.big-stat{font-size:clamp(110px,18vw,240px);font-weight:900;line-height:.72;letter-spacing:-.09em;color:var(--purple)}.big-label{font-size:clamp(25px,3vw,42px);font-weight:900;text-transform:uppercase;margin-top:28px}.impact-list{border-top:1px solid var(--purple)}.impact-row{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);text-transform:uppercase;font-weight:700}.impact-row span:last-child{color:var(--purple)}
-    .support{background:#000}.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:end}.budget{font-size:clamp(80px,13vw,170px);font-weight:900;line-height:.8;letter-spacing:-.08em;color:var(--purple)}.support p{color:var(--muted);line-height:1.8}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-block;border:1px solid var(--purple);padding:15px 20px;text-decoration:none;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:.08em}.btn.primary{background:var(--purple);color:#09020f}.btn:hover{background:#fff;border-color:#fff;color:#09020f}
-    footer{background:#000;padding:50px 7vw;display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}footer a{text-decoration:none}footer a:hover{color:var(--purple)}
-    @media(max-width:900px){.header{height:auto;padding:14px 20px;flex-direction:column}.logo-wrap{width:160px;height:56px}nav{position:static;transform:none;flex-wrap:wrap;justify-content:center;gap:14px 22px;margin-top:10px}.hero{min-height:80vh}.hero-meta,.world-grid,.impact-grid,.support-grid{grid-template-columns:1fr;gap:38px}.timeline{grid-template-columns:1fr 1fr}.moment{border-bottom:1px solid var(--line)}.path{grid-template-columns:50px 1fr}.path p{grid-column:2}.path .arrow{display:none}}
-    @media(max-width:560px){.wrap{width:min(90vw,1180px)}.hero h1{font-size:22vw}.timeline{grid-template-columns:1fr}.moment,.moment:not(:first-child),.moment:last-child{padding:24px 0;border-right:0}.path{padding:38px 5vw}.path h3{font-size:11vw}footer{flex-direction:column}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+    :root { --black:#000; --deep:#0e0427; --purple:#8c52ff; --white:#fff; --muted:#c8c1d5; }
+    * { box-sizing:border-box; }
+    html,body { margin:0; min-height:100%; }
+    body { background:var(--deep); color:var(--white); font-family:"Poppins",Arial,sans-serif; }
+    .header { height:72px; width:100%; display:flex; align-items:center; padding:8px 7%; background:var(--black); position:relative; z-index:10; border-bottom:1px solid #21163b; }
+    .logo-wrap { width:180px; height:62px; display:flex; align-items:center; justify-content:center; flex:0 0 auto; overflow:hidden; }
+    .logo { width:100%; height:100%; display:block; object-fit:contain; }
+    nav { position:absolute; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:clamp(24px,3.2vw,58px); }
+    nav a { color:var(--white); text-decoration:none; text-transform:uppercase; font-size:clamp(12px,.95vw,16px); font-weight:800; white-space:nowrap; transition:color .2s ease; }
+    nav a:hover, nav a:focus-visible, nav a[aria-current="page"] { color:var(--purple); }
+    nav a:focus-visible { outline:2px solid var(--white); outline-offset:6px; }
+
+    main { min-height:calc(100vh - 72px); display:grid; align-items:stretch; overflow:hidden; }
+    .home { width:min(1240px,86vw); margin:0 auto; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr); align-items:center; gap:clamp(40px,7vw,110px); padding:clamp(60px,8vh,110px) 0; }
+    .identity { position:relative; }
+    .identity:before { content:"20240"; display:block; font-size:13px; font-weight:800; letter-spacing:.24em; color:var(--purple); margin-bottom:22px; }
+    h1 { margin:0; font-size:clamp(72px,12.5vw,176px); line-height:.76; letter-spacing:-.085em; font-weight:900; }
+    .team-line { margin:34px 0 0; max-width:660px; font-size:clamp(17px,1.55vw,23px); line-height:1.55; font-weight:500; }
+    .team-line strong { color:var(--purple); font-weight:800; }
+
+    .record { align-self:stretch; display:flex; flex-direction:column; justify-content:center; border-left:1px solid var(--purple); padding-left:clamp(28px,4vw,60px); }
+    .record-year { font-size:clamp(54px,7vw,94px); line-height:.85; letter-spacing:-.07em; font-weight:900; color:var(--purple); }
+    .record-title { margin-top:20px; font-size:clamp(24px,2.6vw,38px); line-height:1.05; letter-spacing:-.04em; font-weight:800; text-transform:uppercase; }
+    .record-copy { margin:22px 0 0; color:var(--muted); font-size:14px; line-height:1.7; max-width:380px; }
+
+    .trajectory { position:absolute; width:42vw; height:42vw; max-width:620px; max-height:620px; right:-22vw; bottom:-25vw; border:1px solid rgba(140,82,255,.42); border-radius:50%; pointer-events:none; }
+    .trajectory:after { content:""; position:absolute; width:9px; height:9px; background:var(--purple); top:13%; left:18%; transform:rotate(45deg); }
+
+    @media (max-width:900px) {
+      .header { height:auto; padding:14px 20px 18px; flex-direction:column; }
+      .logo-wrap { width:160px; height:56px; }
+      nav { position:static; transform:none; justify-content:center; flex-wrap:wrap; gap:14px 22px; margin-top:8px; }
+      .home { width:min(90vw,700px); grid-template-columns:1fr; padding:64px 0 80px; }
+      .record { border-left:0; border-top:1px solid var(--purple); padding:34px 0 0; }
+      .trajectory { display:none; }
+    }
+    @media (max-width:520px) {
+      nav { gap:12px 16px; }
+      nav a { font-size:11px; }
+      h1 { font-size:21vw; }
+    }
+    @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
   </style>
 </head>
 <body>
-<header class="header">
-  <a class="logo-wrap" href="/" aria-label="Slingshot home"><img class="logo" src="./logo.png" alt="Slingshot FTC Team 20240"></a>
-  <nav aria-label="Main navigation">
-    <a href="/">Home</a><a href="#history">About</a><a href="#impact">Outreach</a><a href="#sponsors">Sponsors</a><a href="#contact">Contact</a>
-  </nav>
-</header>
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">Westwood High School · Austin, Texas</div>
-      <h1>SLING<span>SHOT</span></h1>
-      <div class="hero-meta">
-        <strong>FTC TEAM<br>20240</strong>
-        <p>Slingshot is a Westwood High School robotics team competing in the FIRST Tech Challenge. We bring engineering, software, outreach, and teamwork together to compete and contribute to the FTC community.</p>
-      </div>
-    </div>
-  </section>
+  <header class="header">
+    <div class="logo-wrap"><img class="logo" src="./logo.png" alt="Slingshot FTC Team 20240 logo"></div>
+    <nav aria-label="Main navigation">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/about/">About</a>
+      <a href="/robot/">Robot</a>
+      <a href="/outreach/">Outreach</a>
+      <a href="/sponsors/">Sponsors</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
 
-  <section class="world">
-    <div class="wrap world-grid">
-      <div class="year">2026</div>
-      <div>
-        <div class="eyebrow">Past season success</div>
-        <h2>FIRST World Championship Qualifier</h2>
-        <p>Slingshot advanced through the 2026 FTC season to qualify for the FIRST World Championship—the highest level of FIRST Tech Challenge competition.</p>
+  <main>
+    <section class="home" aria-labelledby="home-title">
+      <div class="identity">
+        <h1 id="home-title">SLINGSHOT</h1>
+        <p class="team-line"><strong>FTC Team 20240</strong> · Westwood High School · Austin, Texas</p>
+        <div class="trajectory" aria-hidden="true"></div>
       </div>
-    </div>
-  </section>
 
-  <section class="history" id="history">
-    <div class="wrap">
-      <div class="eyebrow">Since our rookie year</div>
-      <h2>2021 → 2026</h2>
-      <div class="timeline">
-        <div class="moment"><div class="date">2021</div><p><strong>Rookie Year</strong><br>Motivate 2 · League Championship</p></div>
-        <div class="moment"><div class="date">2024</div><p><strong>Think 3</strong><br>Semi-Area Championship</p></div>
-        <div class="moment"><div class="date">2025</div><p><strong>Inspire 1</strong> · League Championship<br>Winning Alliance Partner<br>Division Captain · Area Championship<br>Control 2 · Area Championship</p></div>
-        <div class="moment"><div class="date">2026</div><p><strong>Inspire 2</strong><br>FIRST World Championship Qualifier</p></div>
+      <div class="record">
+        <div class="record-year">2026</div>
+        <div class="record-title">FIRST World Championship Qualifier</div>
+        <p class="record-copy">Slingshot advanced through the 2026 FTC season to qualify for the FIRST World Championship.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="paths" aria-label="Explore Slingshot">
-    <a class="path" href="#history"><span class="num">01</span><h3>About Slingshot</h3><p>Five years of growth, competition, engineering, and team development.</p><span class="arrow">↗</span></a>
-    <a class="path" href="#impact"><span class="num">02</span><h3>Outreach</h3><p>STEM education, FTC mentorship, community events, and technical outreach.</p><span class="arrow">↗</span></a>
-    <a class="path" href="#sponsors"><span class="num">03</span><h3>Sponsors</h3><p>Help fund competition, prototyping, travel, events, and outreach.</p><span class="arrow">↗</span></a>
-  </section>
-
-  <section class="impact" id="impact">
-    <div class="wrap">
-      <div class="eyebrow">Local → Global</div>
-      <h2>Impact beyond competition.</h2>
-      <div class="impact-grid">
-        <div><div class="big-stat">14+</div><div class="big-label">FTC teams mentored</div></div>
-        <div class="impact-list">
-          <div class="impact-row"><span>Robocamp</span><span>500+ hrs</span></div>
-          <div class="impact-row"><span>FTC Mentorship</span><span>100+ hrs</span></div>
-          <div class="impact-row"><span>STEM Nights</span><span>15+ hrs</span></div>
-          <div class="impact-row"><span>Livestream audience</span><span>6,500+ viewers</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="support" id="sponsors">
-    <div class="wrap support-grid">
-      <div>
-        <div class="eyebrow">Support Team 20240</div>
-        <h2>Help build what comes next.</h2>
-        <p>Sponsorship helps Slingshot cover robot parts, prototyping, competition events, travel, outreach, and other season expenses.</p>
-        <div class="actions"><a class="btn primary" href="mailto:slingshotftc@gmail.com?subject=Slingshot%20Sponsorship">Become a Sponsor</a><a class="btn" href="mailto:slingshotftc@gmail.com">Contact Us</a></div>
-      </div>
-      <div><div class="budget">~$10K</div><div class="big-label">Season budget</div></div>
-    </div>
-  </section>
-</main>
-<footer id="contact">
-  <div>Slingshot · FTC Team 20240<br>Westwood High School · Austin, Texas</div>
-  <div><a href="mailto:slingshotftc@gmail.com">slingshotftc@gmail.com</a><br><a href="https://www.instagram.com/slingshot20240/" target="_blank" rel="noopener">@slingshot20240</a></div>
-</footer>
+    </section>
+  </main>
 </body>
 </html>
